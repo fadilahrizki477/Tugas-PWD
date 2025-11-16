@@ -23,7 +23,6 @@
                 for ($baris = 1; $baris <= 10; $baris++) {
                     echo '<tr>';
                     echo '<td class="bilangan-col">' . $baris . '</td>';
-                    
                     for ($kolom = 1; $kolom <= 10; $kolom++) {
                         $hasil = $baris * $kolom;
                         if ($hasil % 2 == 0) {
@@ -31,16 +30,13 @@
                         } else {
                             $class = 'ganjil';
                         }
-                        
                         echo '<td class="' . $class . '">' . $hasil . '</td>';
                     }
-                    
                     echo '</tr>';
                 }
                 ?>
             </table>
         </div>
     </div>
-
 </body>
 </html>
